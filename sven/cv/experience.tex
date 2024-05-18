@@ -11,79 +11,109 @@
 
 %---------------------------------------------------------
   \cventry
-    {Founding Member \& Site Reliability Engineer \& Infrastructure Team Lead} % Job title
-    {Danggeun Pay Inc. (KarrotPay)} % Organization
-    {Seoul, S.Korea} % Location
-    {Mar. 2021 - Present} % Date(s)
+    {Lead Platform Engineer} % Job title
+    {Constructor.io} % Organization
+    {San Francisco, CA, United States} % Location
+    {Nov. 2023 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Everything that matters.}
         \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
-        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
-        \item {Established a standardized base for declarative management of infrastructures and service deployments, enabling operational efficiency and consistency. Over 90\% of AWS resources were all managed through standardized terraform modules. All add-ons and service workloads on the Kubernetes cluster were managed on a GitOps basis with Kustomize and ArgoCD.}
-        \item {Saved over 30\% of the overall AWS costs by establishing a quarterly purchasing strategiy for RI (Reserved Instance) and SP (Savings Plan) and by introducing Graviton instances.}
-        \item {Established a core architecture for regulating of outbound DNS traffic in multi-account and multi-VPC environments utilizing AWS Route53 DNS Firewall and FMS. This significantly increased the level of security confidence in the financial sector's segregated environment.}
-        \item {Introduced Okta employee identity solution in the company, establishing security policies and configuring SSO integration with over 20 enterprise systems including AWS, GitHub, Slack, Google Workspace. Set up a Hub and Spoke architecture, enabling a collaborative account structure with the parent company, Daangn Market.}
       \end{cvitems}
     }
+
+%---------------------------------------------------------
+  \cventry
+    {DevOps Engineer} % Job title
+    {} % Organization
+    {} % Location
+    {Jun. 2023 - Oct. 2023} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {
+        \textbf{Instagram Server Release} (Jan 2022 - Present)
+        \begin{itemize}
+          \item {designing and building release processes and infrastructure, to continuously rollout Instagram product code}
+          \item {collaborating and aligning with many different teams in Instagram - webserver, developer experience, products, ...}
+          \item {managing projects, timelines and expectations with stakeholders}
+        \end{itemize}
+      }
+      \item {
+        \textbf{Elasticsearch} (Jan 2020 - Jan 2022)
+        \begin{itemize}
+          % TODO: filter some stuff out
+          \item {designing, building and maintaining all of Elasticsearch infrastructure at Meta}
+          \item {working with teams using Elasticsearch to understand their needs and onboard them}
+          \item {designed cluster architecture and integration with Meta systems; entire cluster lifecycle management}
+          \item {implemented a continuous integration and deployment solution for Elasticsearch clusters - CI/CD pipelines with custom monitoring and push strategies}
+        \end{itemize}
+      }
+      \item {
+        \textbf{Vulnerability Management} (Nov 2018 - Jan 2020)
+        \begin{itemize}
+          \item {building distributed systems architecture to discover and manage vulnerabilities in all of Meta infrastructure}
+          \item {helping build "Vulnerability Management-as-a-Service" - self serviced vulnerability discovery, monitoring and alerting}
+          \item {working with external partners (companies) on integrating multiple vulnerability providers into our system to broaden coverage and increase discovery speed}
+          \item {cross functional work with numerous other teams to help them surface vulnerabilities in their libraries/repositories/services/hosts and helping them remediate}
+          \item {one of the core maintainers of Meta's opensource tools and libraries for managing vulnerability data (\href{https://github.com/facebookincubator/nvdtools}{nvdtools})}
+        \end{itemize}
+      }
+      \item {
+        \textbf{Misc}
+        \begin{itemize}
+          \item {interviewing candidates for jobs at Meta - coding and systems (Linux) interviews for engineers}
+          \item {primary point of contact ("bootcamp mentor") for Meta newcomers - assigning tasks, tracking progress, helping with team selection, introducing the Meta culture}
+          \item {helping new team members with onboarding - finding tasks and projects, explaining how the systems work, etc.}
+          \item {presenting on internal conferences at Meta}
+          \item {\href{https://www.youtube.com/watch?v=wP3OpdfOYok}{presented my life journey} as an engineer to numerous Middle schools across the UK, as part of the Primary Engineer Programme}
+        \end{itemize}
+      }
+    \end{cvitems}
+  }
 
 %---------------------------------------------------------
   \cventry
     {Site Reliability Engineer} % Job title
-    {Danggeun Market Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Feb. 2021 - Mar. 2021} % Date(s)
-    {
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Director of Infrastructure Division} % Job title
-    {Kasa} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2018 - Jan. 2021} % Date(s)
+    {Superbet} % Organization
+    {Zagreb, Croatia} % Location
+    {Mar. 2022 - Jun. 2023} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
-        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
-        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
-        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
-        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
-        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
-        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
-        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
-        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
+        \item {Distributed tracing setup, both infrastructure and application layers.}
+        \item {Kafka connect deployment.}
+        \item {Load testing Kubernetes clusters on AWS with k6.io.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May 2018} % Date(s)
+    {Lead Software Engineer} % Job title
+    {} % Organization
+    {} % Location
+    {Jan. 2021 - Feb. 2022} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
+        \item {Leading development and maintenance of 13 production services on a betting platform that has 350 000 unique visitors a month, 30 000 bets per hour and 30 000 Kafka messages per second}
+        \item {Replaced legacy bet acceptance solution. Improved scalability from 80req/s to 6400req/s}
+        \item {Conducting 1on1 meetings with 4 team members, supporting their technical growth}
+        \item {Interviewing new candidates, engineering roles}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
+    {Software Engineer} % Job title
+    {} % Organization
+    {} % Location
+    {Jun. 2019 - Dec. 2021} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
+        \item {Development of an event-driven sports betting system}
+        \item {Bet acceptance, Payment, Offer and Risk integration}
+        \item {Responsible for online solution delivery}
+        \item {Introduced: In-house Redis library, Kubernetes health checks, gRPC load balancing}
+        \item {Design documents, Code reviews, Unit and E2E testing}
+        \item {System monitoring and service metric collection with Prometheus and Grafana}
       \end{cvitems}
     }
 
